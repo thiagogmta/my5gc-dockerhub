@@ -92,25 +92,13 @@ Como precisamos criar uma interface de tunel, necessitamos criar um containger c
 Dowload dos arquivos do núcleo:
 
 ```bash
-$ git clone https://github.com/my5G/my5Gcore-compose.git
-```
-
-Compilando os arquivos
-
-```bash
-$ cd my5Gcore-compose
-$ sudo make base
-```
-
-Construção dos serviços
-
-```bash
-$ sudo docker-compose build
+$ git clone https://github.com/thiagogmta/my5gc-dockerhub.git
 ```
 
 Executando os containers através do docker-compose
 
 ```bash
+$ cd my5gc-dockerhub
 $ sudo docker-compose up 
 ```
 
@@ -120,12 +108,12 @@ ou
 $ sudo docker-compose up -d # Para execução em segundo plano
 ```
 
-Para verificar as imagens disponíveis em nosso containers execute:
+Para verificar os containers em execução:
 
 ```bash
-$ sudo docker images
+$ sudo docker ps
 ```
 
-![my5gcore-compose](img/my5gcore.jpg)
+![my5gcore-compose](img/docker-ps.png)
 
 Figura 1: Funções do My5GCore
